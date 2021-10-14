@@ -10,8 +10,10 @@
   },
   "devDependencies": {
     "@types/crypto-js": "^4.0.2",
+    "@types/d3-scale": "^2.1.1",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.12",
+    "@types/node-fetch": "^2.5.12",
     "@types/page": "^1.8.0",
     "@types/ramda": "^0.26.41",
     "@types/three": "0.128.0",
@@ -47,7 +49,11 @@
     "start": "webpack-dev-server --config webpack.config.js --history-api-fallback --content-base public"
   },
   "dependencies": {
+    "@types/d3": "^7.0.0",
     "crypto-js": "^4.0.0",
+    "d3": "^7.0.1",
+    "d3-scale": "^3.2.1",
+    "fetch": "^1.1.0",
     "node-fetch": "^2.6.1",
     "page": "^1.11.6",
     "ramda": "^0.27.0",
