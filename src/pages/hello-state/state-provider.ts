@@ -1,13 +1,19 @@
+import Action from "patterns/state/Action"
+import OpenState from "patterns/state/openState"
+
 export function getState(message: string) {
+  
+  let action: Action = new Action(new OpenState())
+
   switch (message) {
     case "enter":
-      return "open";
+      return action.state.enter(action)
 
     case "payOk":
-      return "open";
+      return action.state.payOK(action)
 
     case "payFailed":
-      return "closed";
+      return action.state.payFailed(action)
     default:
       return "processing";
   }
